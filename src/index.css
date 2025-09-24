@@ -161,3 +161,25 @@ input::placeholder {
     top: 12px;
     left: 15px;
 }
+
+
+@media (max-width: 500px){
+  .contentholder h1{
+    font-size: 20px !important;
+  }
+  .contentholder{
+    margin: 20px;
+  }
+
+  .buttonHandle{
+    flex-wrap: wrap;
+  }
+  .buttonHandle button{
+    font-size: 13px;
+    padding: 10px 12px;
+  }
+ .InputContainer input{
+  width: 100%;
+ }
+
+}

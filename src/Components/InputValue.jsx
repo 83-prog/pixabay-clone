@@ -33,7 +33,7 @@ const InputContainer={
   return (
     <>
     <div style={InputContainer} className='InputContainer'>
-      <div>
+      <div className='contentholder'>
       <div style={{textAlign: "center", marginBottom: "20px"}}>
         <h1 style={{fontSize: "2em", color: "#fff", fontWeight: "700"}}> Stunning royalty-free images </h1>
       </div>
