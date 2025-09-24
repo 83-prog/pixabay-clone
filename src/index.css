@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+body::-webkit-input-placeholder{
+  color: #fff;
+  background-color: red;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.imgMainDiv {
+  column-count: 3;       /* ek line me kitni columns dikhengi */
+  column-gap: 15px;      /* columns ke beech gap */
+  max-width: 1240px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.imgHandle {
+  display: inline-block;
+  margin-bottom: 15px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px;   /* thoda rounded look ke liye */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+.imgHandle img {
+  width: 100%;
+  height: auto;          /* image ke height ko natural rakhega */
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.imgHandle img:hover {
+  transform: scale(1.05);
+}
+
+
+@media (max-width: 900px) {
+  .imgMainDiv {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .imgMainDiv {
+    column-count: 1;
+  }
+}
+
+.HeaderMainDiv{
+  padding: 20px;
+  background-image: url('https://cdn.pixabay.com/index/2025/08/21/07-03-23-241_1440x550.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  object-fit: cover;
+}
+
+.HeaderMainDiv::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    background-blend-mode: hard-light;
+    background: rgba(25,27,38,.64);
+}
+
+.logo--JVgVN {
+    width: auto;
+    height: 30px;
+}
+
+svg:not([fill]) {
+    fill: currentColor;
+}
+
+.logo--JVgVN.dark--W2-N1 {
+    color: #fff;
+    position: absolute;
+}
+
+.InputContainer input{
+  width: max(730px);
+  padding: 15px 45px;
+    background: #ababab;
+    border: none;
+    color: #fff;
+    border-radius: 50px;
+}
+
+
+.InputContainer input:focus-visible{
+outline: none;
+border: none;
+}
+
+.buttonHandle button{
+    padding: 12px 24px;
+    background: #f9d9d933;
+    border: none;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input::placeholder {
+  color: white;   /* ya #fff */
+  opacity: 1;     /* Firefox ke liye zaroori hota hai */
+}
+
+.InputDiv{
+  position: relative;
+}
+
+
+.SearchIcon{
+  position: absolute;
+      top: 15px;
+    left: 15px;
+}
+
+.SearchIcon .fa{
+  font-size: 20px;
+}
+
+
+.fixedHeader{
+      position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    height: 10%;
+    color: #000;
+    z-index: 10;
+}
+
+.Color_change{
+      color: #000;
+    z-index: 9999;
+    position: absolute;
+    top: 12px;
+    left: 15px;
+}
